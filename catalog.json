@@ -92,6 +92,315 @@
    "configs": [
     "BepInEx/config/DWNO_GiftMod.txt"
    ],
+   "fx": [
+    {
+     "id": "money",
+     "name": "Bits",
+     "cat": "Help",
+     "desc": "Give Bits (a negative amount takes Bits)",
+     "template": "money:{amount}",
+     "params": [
+      {
+       "k": "amount",
+       "label": "Bits",
+       "type": "int",
+       "min": -50000,
+       "max": 50000,
+       "default": 1000,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "item",
+     "name": "Item",
+     "cat": "Help",
+     "desc": "Give an item by name",
+     "template": "item:{item}:{qty}",
+     "params": [
+      {
+       "k": "item",
+       "label": "Item",
+       "type": "text",
+       "default": "Hunk of Meat",
+       "hint": "item name"
+      },
+      {
+       "k": "qty",
+       "label": "Amount",
+       "type": "int",
+       "min": 1,
+       "max": 99,
+       "default": 2,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "feed",
+     "name": "Feed",
+     "cat": "Help",
+     "desc": "Partner is fed",
+     "template": "feed:{amount}",
+     "params": [
+      {
+       "k": "amount",
+       "label": "Food",
+       "type": "int",
+       "min": 10,
+       "max": 100,
+       "default": 100,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "evolve",
+     "name": "Digivolve",
+     "cat": "Help",
+     "desc": "Partner digivolves now",
+     "template": "evolve:{side}",
+     "params": [
+      {
+       "k": "side",
+       "label": "Partner",
+       "type": "choice",
+       "options": [
+        {
+         "v": "0",
+         "l": "Right partner"
+        },
+        {
+         "v": "1",
+         "l": "Left partner"
+        },
+        {
+         "v": "",
+         "l": "Both partners"
+        }
+       ],
+       "default": "0"
+      }
+     ]
+    },
+    {
+     "id": "mood",
+     "name": "Mood",
+     "cat": "Help",
+     "desc": "Partner mood up or down",
+     "template": "mood:{amount}",
+     "params": [
+      {
+       "k": "amount",
+       "label": "Mood",
+       "type": "int",
+       "min": -100,
+       "max": 100,
+       "default": 20,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "devolve",
+     "name": "De-digivolve",
+     "cat": "Chaos",
+     "desc": "Partner goes back one stage",
+     "template": "devolve:{side}",
+     "params": [
+      {
+       "k": "side",
+       "label": "Partner",
+       "type": "choice",
+       "options": [
+        {
+         "v": "0",
+         "l": "Right partner"
+        },
+        {
+         "v": "1",
+         "l": "Left partner"
+        },
+        {
+         "v": "",
+         "l": "Both partners"
+        }
+       ],
+       "default": "0"
+      }
+     ]
+    },
+    {
+     "id": "sukamon",
+     "name": "Sukamon",
+     "cat": "Chaos",
+     "desc": "Partner turns into Sukamon",
+     "template": "sukamon",
+     "params": []
+    },
+    {
+     "id": "poop",
+     "name": "Poop",
+     "cat": "Chaos",
+     "desc": "Partner poops on the spot",
+     "template": "poop:now",
+     "params": []
+    },
+    {
+     "id": "sleep",
+     "name": "Sleep",
+     "cat": "Chaos",
+     "desc": "Partner falls asleep right away (time jumps)",
+     "template": "sleep:now",
+     "params": []
+    },
+    {
+     "id": "summon",
+     "name": "Wild Digimon",
+     "cat": "Chaos",
+     "desc": "A wild Digimon from this area attacks",
+     "template": "summon:{kind}",
+     "params": [
+      {
+       "k": "kind",
+       "label": "Enemy",
+       "type": "choice",
+       "options": [
+        {
+         "v": "",
+         "l": "Normal"
+        },
+        {
+         "v": "boss",
+         "l": "Boss"
+        }
+       ],
+       "default": ""
+      }
+     ]
+    },
+    {
+     "id": "hunger",
+     "name": "Hunger",
+     "cat": "Chaos",
+     "desc": "Partner gets hungry",
+     "template": "hunger:{amount}",
+     "params": [
+      {
+       "k": "amount",
+       "label": "Hunger",
+       "type": "int",
+       "min": 10,
+       "max": 100,
+       "default": 100,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "life",
+     "name": "Lifespan",
+     "cat": "Chaos",
+     "desc": "Partner loses (or gains) lifespan in game minutes; 1440 = one day",
+     "template": "life:{mins}",
+     "params": [
+      {
+       "k": "mins",
+       "label": "Minutes",
+       "type": "int",
+       "min": -10080,
+       "max": 10080,
+       "default": -1440,
+       "unit": "min"
+      }
+     ]
+    },
+    {
+     "id": "drunk",
+     "name": "Drunk camera",
+     "cat": "Funny",
+     "desc": "Drunk camera sway (stacks)",
+     "template": "drunk:{secs}",
+     "params": [
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 5,
+       "max": 120,
+       "default": 15,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "fly",
+     "name": "Fly",
+     "cat": "Funny",
+     "desc": "The Tamer floats up and drops back down",
+     "template": "fly",
+     "params": []
+    },
+    {
+     "id": "warp",
+     "name": "Teleport",
+     "cat": "World",
+     "desc": "Teleport to town or a random known area",
+     "template": "{to}",
+     "params": [
+      {
+       "k": "to",
+       "label": "Where",
+       "type": "choice",
+       "options": [
+        {
+         "v": "home",
+         "l": "Floatia town square"
+        },
+        {
+         "v": "warp:random",
+         "l": "Random known area"
+        }
+       ],
+       "default": "home"
+      }
+     ]
+    },
+    {
+     "id": "time",
+     "name": "Skip time",
+     "cat": "World",
+     "desc": "Skip game minutes",
+     "template": "time:{mins}",
+     "params": [
+      {
+       "k": "mins",
+       "label": "Minutes",
+       "type": "int",
+       "min": 10,
+       "max": 1440,
+       "default": 180,
+       "unit": "min"
+      }
+     ]
+    },
+    {
+     "id": "random",
+     "name": "Gacha",
+     "cat": "Gacha",
+     "desc": "One effect at random from your list (separate with |)",
+     "template": "random:{list}",
+     "params": [
+      {
+       "k": "list",
+       "label": "Effects",
+       "type": "text",
+       "default": "money:500|poop:now|summon",
+       "hint": "effects separated by |"
+      }
+     ]
+    }
+   ],
    "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/dwno-v1.4.0/dwno-1.4.0.zip",
    "sha256": "4078fb2a1c9812c30f8af91ad39ff9826c5c313ae73b1928572bb045e4e70594",
    "size": 43450325,
@@ -200,6 +509,601 @@
    "configs": [
     "CoralGift.txt"
    ],
+   "fx": [
+    {
+     "id": "gold",
+     "name": "Gold",
+     "cat": "Help",
+     "desc": "Give gold (a negative amount takes gold, never below 0)",
+     "template": "gold:{amount}",
+     "params": [
+      {
+       "k": "amount",
+       "label": "Amount",
+       "type": "int",
+       "min": -50000,
+       "max": 50000,
+       "default": 500,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "coins",
+     "name": "Coin rain",
+     "cat": "Help",
+     "desc": "Gold coins rain around you",
+     "template": "coins:{amount}:{secs}",
+     "params": [
+      {
+       "k": "amount",
+       "label": "Total gold",
+       "type": "int",
+       "min": 10,
+       "max": 5000,
+       "default": 500,
+       "unit": ""
+      },
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 5,
+       "max": 60,
+       "default": 15,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "item",
+     "name": "Item",
+     "cat": "Help",
+     "desc": "Give an item: 'random' or an item name like Grilled fish",
+     "template": "item:{item}:{qty}",
+     "params": [
+      {
+       "k": "item",
+       "label": "Item",
+       "type": "text",
+       "default": "random",
+       "hint": "random or an item name"
+      },
+      {
+       "k": "qty",
+       "label": "Amount",
+       "type": "int",
+       "min": 1,
+       "max": 99,
+       "default": 1,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "heal",
+     "name": "Full heal",
+     "cat": "Help",
+     "desc": "Full health and energy",
+     "template": "heal",
+     "params": []
+    },
+    {
+     "id": "stamina",
+     "name": "Energy",
+     "cat": "Help",
+     "desc": "Add energy (negative drains it)",
+     "template": "stamina:{amount}",
+     "params": [
+      {
+       "k": "amount",
+       "label": "Energy",
+       "type": "int",
+       "min": -500,
+       "max": 500,
+       "default": 100,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "hearts",
+     "name": "Friendship",
+     "cat": "Help",
+     "desc": "Friendship points with a villager ('random' or a name)",
+     "template": "hearts:{who}:{pts}",
+     "params": [
+      {
+       "k": "who",
+       "label": "Villager",
+       "type": "text",
+       "default": "random",
+       "hint": "random or a villager name"
+      },
+      {
+       "k": "pts",
+       "label": "Points",
+       "type": "int",
+       "min": 10,
+       "max": 1000,
+       "default": 100,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "freeze",
+     "name": "Freeze",
+     "cat": "Chaos",
+     "desc": "Frozen in an ice block",
+     "template": "freeze:{secs}",
+     "params": [
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 3,
+       "max": 60,
+       "default": 10,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "lightning",
+     "name": "Lightning strike",
+     "cat": "Chaos",
+     "desc": "Struck by lightning: shocked, charred black, loses energy",
+     "template": "lightning:{energy}",
+     "params": [
+      {
+       "k": "energy",
+       "label": "Energy lost",
+       "type": "int",
+       "min": 0,
+       "max": 200,
+       "default": 50,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "size",
+     "name": "Giant / tiny",
+     "cat": "Chaos",
+     "desc": "Change your size for a while",
+     "template": "size:{scale}:{secs}",
+     "params": [
+      {
+       "k": "scale",
+       "label": "Size",
+       "type": "choice",
+       "options": [
+        {
+         "v": "2",
+         "l": "Giant"
+        },
+        {
+         "v": "3",
+         "l": "Huge"
+        },
+        {
+         "v": "0.4",
+         "l": "Tiny"
+        },
+        {
+         "v": "0.2",
+         "l": "Mini"
+        }
+       ],
+       "default": "2"
+      },
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 3,
+       "max": 120,
+       "default": 20,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "speed",
+     "name": "Speed",
+     "cat": "Chaos",
+     "desc": "Super speed or turtle mode",
+     "template": "speed:{mult}:{secs}",
+     "params": [
+      {
+       "k": "mult",
+       "label": "Speed",
+       "type": "choice",
+       "options": [
+        {
+         "v": "2.5",
+         "l": "Super fast"
+        },
+        {
+         "v": "4",
+         "l": "Lightning fast"
+        },
+        {
+         "v": "0.35",
+         "l": "Turtle"
+        },
+        {
+         "v": "0.15",
+         "l": "Snail"
+        }
+       ],
+       "default": "2.5"
+      },
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 3,
+       "max": 120,
+       "default": 15,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "invert",
+     "name": "Reversed controls",
+     "cat": "Chaos",
+     "desc": "Movement controls are reversed",
+     "template": "invert:{secs}",
+     "params": [
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 3,
+       "max": 120,
+       "default": 15,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "spin",
+     "name": "Spin",
+     "cat": "Chaos",
+     "desc": "Spins like a top, dizzy afterwards",
+     "template": "spin:{secs}",
+     "params": [
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 2,
+       "max": 30,
+       "default": 6,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "chaos",
+     "name": "Chaos combo",
+     "cat": "Chaos",
+     "desc": "Tiny + turbo + reversed controls at once",
+     "template": "chaos:{secs}",
+     "params": [
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 3,
+       "max": 30,
+       "default": 8,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "junk",
+     "name": "Junk the bag",
+     "cat": "Chaos",
+     "desc": "The bag fills with trash",
+     "template": "junk:{count}",
+     "params": [
+      {
+       "k": "count",
+       "label": "Trash items",
+       "type": "int",
+       "min": 1,
+       "max": 30,
+       "default": 15,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "monster",
+     "name": "Monsters",
+     "cat": "Chaos",
+     "desc": "Slimes appear and chase you",
+     "template": "monster:{count}:{secs}",
+     "params": [
+      {
+       "k": "count",
+       "label": "Monsters",
+       "type": "int",
+       "min": 1,
+       "max": 8,
+       "default": 3,
+       "unit": ""
+      },
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 10,
+       "max": 120,
+       "default": 30,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "crows",
+     "name": "Crows",
+     "cat": "Chaos",
+     "desc": "Farm crops vanish (real removal)",
+     "template": "crows:{count}",
+     "params": [
+      {
+       "k": "count",
+       "label": "Crops",
+       "type": "int",
+       "min": 1,
+       "max": 50,
+       "default": 5,
+       "unit": ""
+      }
+     ]
+    },
+    {
+     "id": "sick",
+     "name": "Sick animal",
+     "cat": "Chaos",
+     "desc": "A farm animal (or all of them) gets sick",
+     "template": "sick:{who}",
+     "params": [
+      {
+       "k": "who",
+       "label": "Animals",
+       "type": "choice",
+       "options": [
+        {
+         "v": "",
+         "l": "One random"
+        },
+        {
+         "v": "all",
+         "l": "All"
+        }
+       ],
+       "default": ""
+      }
+     ]
+    },
+    {
+     "id": "faint",
+     "name": "Faint",
+     "cat": "Chaos",
+     "desc": "Ends the day: the game saves and takes a gold penalty. Use with care!",
+     "template": "faint",
+     "params": []
+    },
+    {
+     "id": "hidehud",
+     "name": "Hide HUD",
+     "cat": "Chaos",
+     "desc": "The game interface disappears",
+     "template": "hidehud:{secs}",
+     "params": [
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 5,
+       "max": 120,
+       "default": 20,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "rename",
+     "name": "Rename",
+     "cat": "Funny",
+     "desc": "The player is renamed to the gift sender",
+     "template": "rename",
+     "params": []
+    },
+    {
+     "id": "look",
+     "name": "Makeover",
+     "cat": "Funny",
+     "desc": "Random hair, colours and body (0 s = keeps it)",
+     "template": "look:{secs}",
+     "params": [
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 0,
+       "max": 600,
+       "default": 60,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "gender",
+     "name": "Body swap",
+     "cat": "Funny",
+     "desc": "Switch body type (0 s = keeps it)",
+     "template": "gender:{secs}",
+     "params": [
+      {
+       "k": "secs",
+       "label": "Duration",
+       "type": "int",
+       "min": 0,
+       "max": 600,
+       "default": 60,
+       "unit": "s"
+      }
+     ]
+    },
+    {
+     "id": "weather",
+     "name": "Weather",
+     "cat": "World",
+     "desc": "Change the weather",
+     "template": "weather:{w}",
+     "params": [
+      {
+       "k": "w",
+       "label": "Weather",
+       "type": "choice",
+       "options": [
+        {
+         "v": "random",
+         "l": "Random"
+        },
+        {
+         "v": "sunny",
+         "l": "Sunny"
+        },
+        {
+         "v": "rain",
+         "l": "Rain"
+        },
+        {
+         "v": "storm",
+         "l": "Storm"
+        },
+        {
+         "v": "windy",
+         "l": "Windy"
+        },
+        {
+         "v": "snow",
+         "l": "Snow"
+        },
+        {
+         "v": "blizzard",
+         "l": "Blizzard"
+        }
+       ],
+       "default": "storm"
+      }
+     ]
+    },
+    {
+     "id": "teleport",
+     "name": "Teleport",
+     "cat": "World",
+     "desc": "Teleport somewhere on the island",
+     "template": "teleport:{to}",
+     "params": [
+      {
+       "k": "to",
+       "label": "Where",
+       "type": "choice",
+       "options": [
+        {
+         "v": "random",
+         "l": "Random place"
+        },
+        {
+         "v": "near",
+         "l": "Somewhere nearby"
+        },
+        {
+         "v": "Farm",
+         "l": "Farm"
+        },
+        {
+         "v": "beach",
+         "l": "Beach"
+        },
+        {
+         "v": "town",
+         "l": "Town"
+        },
+        {
+         "v": "museum",
+         "l": "Museum"
+        },
+        {
+         "v": "hillside",
+         "l": "Hillside"
+        },
+        {
+         "v": "Woodlands",
+         "l": "Woodlands"
+        },
+        {
+         "v": "lookout",
+         "l": "Lookout"
+        },
+        {
+         "v": "divingPier",
+         "l": "Diving pier"
+        },
+        {
+         "v": "Hotspring",
+         "l": "Hot spring"
+        }
+       ],
+       "default": "random"
+      }
+     ]
+    },
+    {
+     "id": "time",
+     "name": "Skip time",
+     "cat": "World",
+     "desc": "The clock jumps forward",
+     "template": "time:{mins}",
+     "params": [
+      {
+       "k": "mins",
+       "label": "Minutes",
+       "type": "int",
+       "min": 10,
+       "max": 600,
+       "default": 60,
+       "unit": "min"
+      }
+     ]
+    },
+    {
+     "id": "random",
+     "name": "Gacha",
+     "cat": "Gacha",
+     "desc": "One effect at random from your list (separate with |)",
+     "template": "random:{list}",
+     "params": [
+      {
+       "k": "list",
+       "label": "Effects",
+       "type": "text",
+       "default": "gold:100|freeze:10|heal",
+       "hint": "effects separated by |"
+      }
+     ]
+    }
+   ],
    "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/coral-v1.1/coral-1.1.zip",
    "sha256": "d83332ff37dbd2350ffa8e194456c3b6715c282b2645392179dac24e471493b5",
    "size": 17213533,
@@ -211,11 +1115,11 @@
   "lynk": ""
  },
  "launcher": {
-  "version": "2.1.0",
-  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v2.1.0/VankhaMods-Launcher.exe",
+  "version": "2.2.0",
+  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v2.2.0/VankhaMods-Launcher.exe",
   "updated": "2026-11-27",
-  "sha256": "e5874f2cc1ceda36241d7408b00e77d9a40b22a12d3c887e16f2d97ce123b5d1",
-  "size": 16533230,
+  "sha256": "ca6f6eccbe0839eb3b40d103d95b48c5b41bb0ff3411903a6d6676d27795de0f",
+  "size": 16533978,
   "min_version": "0"
  }
 }
