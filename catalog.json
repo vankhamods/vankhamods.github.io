@@ -1,0 +1,101 @@
+{
+ "mods": [
+  {
+   "id": "dwno",
+   "name": "Digimon World Next Order",
+   "appid": "1530160",
+   "dest": "",
+   "process": "Digimon World Next Order.exe",
+   "saves": [
+    "%USERPROFILE%\\AppData\\LocalLow\\Bandai Namco Entertainment\\Digimon World Next Order"
+   ],
+   "bridge": "DWNOGift.exe",
+   "version": "1.4.0",
+   "changelog": "TikFinity webhook with the gift sender's name in every popup; gift spam is queued, nothing is lost.",
+   "port": 21301,
+   "after_install": "Start the game once: the first start with BepInEx takes 1-3 minutes (black screen). That is normal.",
+   "howto": [
+    "Click Start in the launcher (it opens DWNOGift.exe and the game). Keep the black DWNOGift window open while you stream.",
+    "The first game start with BepInEx takes 1-3 minutes on a black screen. That is normal.",
+    "TikFinity > Actions > Webhook: http://127.0.0.1:21301/<effect>?name={nickname}",
+    "Or use TikFinity key presses: hotkeys live in BepInEx\\config\\DWNO_GiftMod.txt in the game folder.",
+    "Never put the same gift on a webhook AND a key press, or it fires twice.",
+    "Windows Smart App Control or an antivirus may block BepInEx or the .exe files (they are not code-signed). Allow them."
+   ],
+   "effects": [
+    [
+     "money:1000",
+     "+1000 Bits (money:-500 takes Bits)"
+    ],
+    [
+     "item:Hunk of Meat:2",
+     "give an item by name, any amount"
+    ],
+    [
+     "evolve:0",
+     "right partner digivolves now (evolve:1 = left, evolve = both)"
+    ],
+    [
+     "devolve:0",
+     "partner goes back one stage"
+    ],
+    [
+     "sukamon",
+     "partner turns into Sukamon"
+    ],
+    [
+     "poop:now",
+     "partner poops on the spot"
+    ],
+    [
+     "sleep:now",
+     "partner falls asleep right away (time jumps)"
+    ],
+    [
+     "summon",
+     "a wild Digimon from this area attacks (summon:boss = boss version)"
+    ],
+    [
+     "drunk:15",
+     "drunk camera sway for 15 s (stacks)"
+    ],
+    [
+     "fly",
+     "the Tamer floats up and drops back down"
+    ],
+    [
+     "hunger:100",
+     "partner gets hungry (feed:100 = full)"
+    ],
+    [
+     "mood:-20",
+     "mood down (mood:20 = up)"
+    ],
+    [
+     "life:-1440",
+     "partner loses one game day of lifespan"
+    ],
+    [
+     "home",
+     "teleport to the Floatia town square (warp:random = random known area)"
+    ],
+    [
+     "time:180",
+     "skip 180 game minutes"
+    ],
+    [
+     "random:money:500|poop:now|summon",
+     "gacha: one of them at random"
+    ]
+   ],
+   "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/dwno-v1.4.0/dwno-1.4.0.zip",
+   "sha256": "4078fb2a1c9812c30f8af91ad39ff9826c5c313ae73b1928572bb045e4e70594",
+   "size": 43450325,
+   "updated": "2026-11-27"
+  }
+ ],
+ "links": {
+  "patreon": "https://www.patreon.com/vankha",
+  "lynk": ""
+ }
+}
