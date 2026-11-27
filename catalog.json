@@ -16,8 +16,9 @@
    "after_install": "Start the game once: the first start with BepInEx takes 1-3 minutes (black screen). That is normal.",
    "howto": [
     "Click Start in the launcher (it opens DWNOGift.exe and the game). Keep the black DWNOGift window open while you stream.",
+    "Triggers tab: add TikTok gifts, follows, shares, likes or chat commands and pick the effect each one triggers. Then click the TikTok button at the top, type your username and Connect after you go LIVE. The launcher must stay open (it keeps running in the background while you are live).",
     "The first game start with BepInEx takes 1-3 minutes on a black screen. That is normal.",
-    "TikFinity > Actions > Webhook: http://127.0.0.1:21301/<effect>?name={nickname}",
+    "Prefer TikFinity? TikFinity > Actions > Webhook: http://127.0.0.1:21301/<effect>?name={nickname}",
     "Or use TikFinity key presses: hotkeys live in BepInEx\\config\\DWNO_GiftMod.txt in the game folder.",
     "Never put the same gift on a webhook AND a key press, or it fires twice.",
     "Windows Smart App Control or an antivirus may block BepInEx or the .exe files (they are not code-signed). Allow them."
@@ -112,7 +113,8 @@
    "after_install": "",
    "howto": [
     "Click Start in the launcher (it opens CoralGift.exe and the game). Keep the black CoralGift window open while you stream.",
-    "TikFinity > Actions > Webhook: http://127.0.0.1:21300/<effect>?name={nickname}",
+    "Triggers tab: add TikTok gifts, follows, shares, likes or chat commands and pick the effect each one triggers. Then click the TikTok button at the top, type your username and Connect after you go LIVE. The launcher must stay open (it keeps running in the background while you are live).",
+    "Prefer TikFinity? TikFinity > Actions > Webhook: http://127.0.0.1:21300/<effect>?name={nickname}",
     "Or use TikFinity key presses: hotkeys live in CoralGift.txt next to CoralGift.exe (created on the first start).",
     "Never put the same gift on a webhook AND a key press, or it fires twice.",
     "The 'faint' effect ends the in-game day (the game saves and takes a gold penalty). Use it only if you want that."
@@ -209,8 +211,11 @@
   "lynk": ""
  },
  "launcher": {
-  "version": "2.0.0",
-  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v2.0.0/VankhaMods-Launcher.exe",
-  "updated": "2026-11-27"
+  "version": "2.1.0",
+  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v2.1.0/VankhaMods-Launcher.exe",
+  "updated": "2026-11-27",
+  "sha256": "e5874f2cc1ceda36241d7408b00e77d9a40b22a12d3c887e16f2d97ce123b5d1",
+  "size": 16533230,
+  "min_version": "0"
  }
 }
