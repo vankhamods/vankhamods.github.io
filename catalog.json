@@ -88,6 +88,9 @@
      "gacha: one of them at random"
     ]
    ],
+   "configs": [
+    "BepInEx/config/DWNO_GiftMod.txt"
+   ],
    "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/dwno-v1.4.0/dwno-1.4.0.zip",
    "sha256": "4078fb2a1c9812c30f8af91ad39ff9826c5c313ae73b1928572bb045e4e70594",
    "size": 43450325,
@@ -192,6 +195,9 @@
      "gacha: one of them at random"
     ]
    ],
+   "configs": [
+    "CoralGift.txt"
+   ],
    "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/coral-v1.0/coral-1.0.zip",
    "sha256": "7070b3e69547baa8e378d49da48e4f91c024823117d31d6cacd1f986bb0ea909",
    "size": 17211702,
@@ -203,8 +209,8 @@
   "lynk": ""
  },
  "launcher": {
-  "version": "1.0.0",
-  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v1.0.0/VankhaMods-Launcher.exe",
+  "version": "2.0.0",
+  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v2.0.0/VankhaMods-Launcher.exe",
   "updated": "2026-11-27"
  }
 }
