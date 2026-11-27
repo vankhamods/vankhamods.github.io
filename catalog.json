@@ -107,8 +107,8 @@
     "%LOCALAPPDATA%\\ProjectCoral\\Saved\\SaveGames"
    ],
    "bridge": "CoralGift.exe",
-   "version": "1.0",
-   "changelog": "First release: 30+ effects, gift sender's name in every popup, TikFinity webhook.",
+   "version": "1.1",
+   "changelog": "Fix: the spin effect could crash the game; it is now smooth and safe. Works with the launcher's TikTok triggers, goals and overlays.",
    "port": 21300,
    "after_install": "",
    "howto": [
@@ -200,9 +200,9 @@
    "configs": [
     "CoralGift.txt"
    ],
-   "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/coral-v1.0/coral-1.0.zip",
-   "sha256": "7070b3e69547baa8e378d49da48e4f91c024823117d31d6cacd1f986bb0ea909",
-   "size": 17211702,
+   "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/coral-v1.1/coral-1.1.zip",
+   "sha256": "d83332ff37dbd2350ffa8e194456c3b6715c282b2645392179dac24e471493b5",
+   "size": 17213533,
    "updated": "2026-11-27"
   }
  ],
