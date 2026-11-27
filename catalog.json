@@ -201,5 +201,10 @@
  "links": {
   "patreon": "https://www.patreon.com/vankha",
   "lynk": ""
+ },
+ "launcher": {
+  "version": "1.0.0",
+  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v1.0.0/VankhaMods-Launcher.exe",
+  "updated": "2026-11-27"
  }
 }
