@@ -92,6 +92,110 @@
    "sha256": "4078fb2a1c9812c30f8af91ad39ff9826c5c313ae73b1928572bb045e4e70594",
    "size": 43450325,
    "updated": "2026-11-27"
+  },
+  {
+   "id": "coral",
+   "name": "Coral Island",
+   "appid": "1158160",
+   "dest": "ProjectCoral/Binaries/Win64",
+   "process": "ProjectCoral-Win64-Shipping.exe",
+   "saves": [
+    "%LOCALAPPDATA%\\ProjectCoral\\Saved\\SaveGames"
+   ],
+   "bridge": "CoralGift.exe",
+   "version": "1.0",
+   "changelog": "First release: 30+ effects, gift sender's name in every popup, TikFinity webhook.",
+   "port": 21300,
+   "after_install": "",
+   "howto": [
+    "Click Start in the launcher (it opens CoralGift.exe and the game). Keep the black CoralGift window open while you stream.",
+    "TikFinity > Actions > Webhook: http://127.0.0.1:21300/<effect>?name={nickname}",
+    "Or use TikFinity key presses: hotkeys live in CoralGift.txt next to CoralGift.exe (created on the first start).",
+    "Never put the same gift on a webhook AND a key press, or it fires twice.",
+    "The 'faint' effect ends the in-game day (the game saves and takes a gold penalty). Use it only if you want that."
+   ],
+   "effects": [
+    [
+     "gold:500",
+     "+500 gold (gold:-300 takes gold, never below 0)"
+    ],
+    [
+     "coins:500:15",
+     "gold coins rain around you"
+    ],
+    [
+     "item:random:1",
+     "a random item (item:Grilled fish:3 for a specific one)"
+    ],
+    [
+     "freeze:10",
+     "frozen in an ice block for 10 s"
+    ],
+    [
+     "lightning",
+     "struck by lightning: shocked, charred black, -energy"
+    ],
+    [
+     "size:2:20",
+     "giant for 20 s (size:0.4:20 = tiny)"
+    ],
+    [
+     "speed:2.5:15",
+     "super speed (speed:0.35:15 = turtle)"
+    ],
+    [
+     "invert:15",
+     "controls reversed for 15 s"
+    ],
+    [
+     "spin:6",
+     "spins like a top, dizzy afterwards"
+    ],
+    [
+     "chaos:8",
+     "tiny + turbo + reversed controls at once"
+    ],
+    [
+     "junk:15",
+     "the bag fills with trash"
+    ],
+    [
+     "rename",
+     "the player is renamed to the gift sender"
+    ],
+    [
+     "look:60",
+     "random makeover for 60 s"
+    ],
+    [
+     "weather:storm",
+     "change the weather (sunny, rain, storm, snow...)"
+    ],
+    [
+     "teleport:random",
+     "teleport somewhere on the island"
+    ],
+    [
+     "monster:4:30",
+     "slimes appear and chase you"
+    ],
+    [
+     "crows:5",
+     "5 farm crops vanish (real removal)"
+    ],
+    [
+     "heal",
+     "full health + energy"
+    ],
+    [
+     "random:gold:100|freeze:10|heal",
+     "gacha: one of them at random"
+    ]
+   ],
+   "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/coral-v1.0/coral-1.0.zip",
+   "sha256": "7070b3e69547baa8e378d49da48e4f91c024823117d31d6cacd1f986bb0ea909",
+   "size": 17211702,
+   "updated": "2026-11-27"
   }
  ],
  "links": {
