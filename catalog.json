@@ -1121,5 +1121,34 @@
   "sha256": "ca6f6eccbe0839eb3b40d103d95b48c5b41bb0ff3411903a6d6676d27795de0f",
   "size": 16533978,
   "min_version": "0"
- }
+ },
+ "apps": [
+  {
+   "id": "mocap",
+   "name": "Motion Capture (beta)",
+   "process": "",
+   "bridge": "MotionCapture.exe",
+   "version": "0.5.0",
+   "changelog": "Beta for testers: webcam body control as a virtual Xbox controller or keyboard + mouse.",
+   "after_install": "Click Start to open it.",
+   "howto": [
+    "Webcam body control: your movements press buttons on a virtual Xbox controller (or keyboard + mouse) in your game.",
+    "Click Start. The settings page opens in your browser (http://127.0.0.1:8765). Pick your camera and a profile, stand where you play, stay still until calibration is done.",
+    "First start: if the ViGEmBus driver is missing, its installer opens. Install it once; the virtual controller needs it.",
+    "Plays together with the gift mods: start the game from its own card (game + gift window), then Motion Capture. Gift effects keep working, and effects like inverted controls also flip your body controls.",
+    "Keyboard + mouse profiles: click the game window and press F8 to send keys to it. F8 = pause / resume, F9 = recalibrate, F10 = quit. Numpad keys cannot be bound, so the gift mods' Numpad hotkeys never fire by accident.",
+    "Optional: 'Send to stream' puts your camera with the skeleton on the OBS Virtual Camera (needs OBS installed); add that camera in TikTok LIVE Studio.",
+    "Something wrong? Note the step, your camera and resolution, take a screenshot and send it with the launcher log."
+   ],
+   "effects": [],
+   "configs": [
+    "config.json"
+   ],
+   "icon": "🕺",
+   "zip": "https://github.com/vankhamods/vankhamods.github.io/releases/download/mocap-v0.5.0/mocap-0.5.0.zip",
+   "sha256": "56724400315ec4f32159c3c1f847dd10b36a9c4873aa172c6ff62cd7c357a038",
+   "size": 142807721,
+   "updated": "2026-11-28"
+  }
+ ]
 }
