@@ -1115,11 +1115,11 @@
   "lynk": ""
  },
  "launcher": {
-  "version": "2.2.0",
-  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v2.2.0/VankhaMods-Launcher.exe",
-  "updated": "2026-11-27",
-  "sha256": "ca6f6eccbe0839eb3b40d103d95b48c5b41bb0ff3411903a6d6676d27795de0f",
-  "size": 16533978,
+  "version": "2.3.0",
+  "url": "https://github.com/vankhamods/vankhamods.github.io/releases/download/launcher-v2.3.0/VankhaMods-Launcher.exe",
+  "updated": "2026-11-28",
+  "sha256": "ad4bcce5c8b24188d165b6cd0c803752ad1060ef6ea09d6c461f161bd7b10b16",
+  "size": 16537957,
   "min_version": "0"
  },
  "apps": [
